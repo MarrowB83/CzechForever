@@ -1,0 +1,29 @@
+Czech Forever
+Copyright (c) 2026 Marek Lušovský
+https://www.curseforge.com/wow/addons/czechforever
+
+Kód addonu, překlad a nahrávky dabingu jsou pod licencí Creative Commons
+Uveďte původ-Neužívejte komerčně 3.0 Unported (CC BY-NC 3.0):
+https://creativecommons.org/licenses/by-nc/3.0/deed.cs
+
+Addon smíš sdílet i upravovat, pokud uvedeš autora a nebudeš ho používat komerčně.
+Nahrávky dabingu vznikly lokálními AI modely a smějí se používat jen nekomerčně.
+
+Texty questů, rozhovorů a knih patří Blizzard Entertainment, Inc.; překlad je fanouškovský.
+World of Warcraft a Warcraft jsou ochranné známky Blizzard Entertainment, Inc.
+Tento projekt s Blizzard Entertainment nijak nesouvisí a není jím podporován.
+
+Písmo Marcellus (Fonts/Marcellus-Regular.ttf):
+Copyright (c) 2012 Brian J. Bonislawsky DBA Astigmatic (AOETI), SIL Open Font License 1.1
+(celý text ve Fonts/Marcellus-OFL.txt). Licence CC BY-NC se na písmo nevztahuje.
+
+-----------------------------------------------------------------------------------------------
+
+Czech Forever - Copyright (c) 2026 Marek Lušovský.
+Code, translations and voice audio are licensed under CC BY-NC 3.0
+(https://creativecommons.org/licenses/by-nc/3.0/): free to share and adapt for non-commercial
+purposes, with attribution. The voice audio was made with local AI models and may only be used
+non-commercially. Quest, dialogue and book texts belong to Blizzard Entertainment, Inc.; the
+translation is fan-made. World of Warcraft is a trademark of Blizzard Entertainment, Inc.; this
+project is not affiliated with or endorsed by Blizzard. Bundled font Marcellus: SIL Open Font
+License 1.1 (Fonts/Marcellus-OFL.txt).
