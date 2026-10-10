@@ -1,0 +1,59 @@
+# Každé zveřejněné vydání oznámí na Discordu v #oznámení (česká část poznámek k vydání).
+# Webhook kanálu je v secretu DISCORD_WEBHOOK. Ruční spuštění (Run workflow) pošle poslední vydání.
+name: Oznámení na Discord
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discord:
+    if: github.event_name == 'workflow_dispatch' || !github.event.release.prerelease
+    runs-on: ubuntu-latest
+    steps:
+      - name: Poslat oznámení
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          GH_TOKEN: ${{ github.token }}
+          RELEASE: ${{ toJSON(github.event.release) }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then echo "Chybí secret DISCORD_WEBHOOK"; exit 1; fi
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            RELEASE=$(gh api "repos/$GITHUB_REPOSITORY/releases/latest")
+            export RELEASE
+          fi
+          python3 - <<'EOF'
+          import json, os, re, urllib.request
+
+          rel = json.loads(os.environ["RELEASE"])
+          body = (rel.get("body") or "").replace("\r\n", "\n")
+          # Poznámky jsou nejdřív anglicky, za čarou --- česky: na Discord jde česká část.
+          parts = re.split(r"\n-{3,}\n", body)
+          text = (parts[-1] if len(parts) > 1 else body).strip()
+          if len(text) > 3800:
+              text = text[:3800].rsplit("\n", 1)[0] + "\n…"
+          name = rel.get("name") or rel["tag_name"]
+          url = rel["html_url"]
+          payload = {
+              "username": "Czech Forever",
+              "content": f"📦 Vyšla nová verze **{name}**!",
+              "embeds": [{
+                  "title": name,
+                  "url": url,
+                  "description": f"{text}\n\n**[Stáhnout z GitHubu]({url})**",
+                  "color": 0xD7141A,
+              }],
+              "allowed_mentions": {"parse": []},
+          }
+          req = urllib.request.Request(
+              os.environ["DISCORD_WEBHOOK"],
+              data=json.dumps(payload).encode(),
+              headers={"Content-Type": "application/json", "User-Agent": "CzechForever-release"},
+          )
+          with urllib.request.urlopen(req) as res:
+              print("Discord:", res.status)
+          EOF
