@@ -38,13 +38,17 @@ jobs:
               text = text[:3800].rsplit("\n", 1)[0] + "\n…"
           name = rel.get("name") or rel["tag_name"]
           url = rel["html_url"]
+          # odkazy pod oznámením (hráč 2. 11. 2026: nejen GitHub, ale i CurseForge a návod k instalaci na webu)
+          CURSEFORGE = "https://www.curseforge.com/wow/addons/czechforever"
+          GUIDE = "https://czechforever.cz/instalace/"
           payload = {
               "username": "Czech Forever",
               "content": f"📦 Vyšla nová verze **{name}**!",
               "embeds": [{
                   "title": name,
                   "url": url,
-                  "description": f"{text}\n\n**[Stáhnout z GitHubu]({url})**",
+                  "description": f"{text}\n\n**Stáhnout:** [CurseForge]({CURSEFORGE}) · [GitHub]({url})\n"
+                                 f"**Jak nainstalovat:** [návod na czechforever.cz]({GUIDE})",
                   "color": 0xD7141A,
               }],
               "allowed_mentions": {"parse": []},
