@@ -4,6 +4,8 @@ Kompletní čeština s českým dabingem pro **World of Warcraft: Forever**: que
 rozhraní a přes 29 000 namluvených replik ve 185 hlasech, s emocemi. Dabing jde až do úrovně 60, bossové mluví
 vlastním hlasem, vypravěč přečte knihy nahlas a česky mluví i NPC v chatu a tvoje postava.
 
+### ➜ Stáhni na CurseForge: [curseforge.com/wow/addons/czechforever](https://www.curseforge.com/wow/addons/czechforever)
+
 **Web:** [czechforever.cz](https://czechforever.cz) · **CurseForge:** [Czech Forever](https://www.curseforge.com/wow/addons/czechforever) ·
 **Discord:** [discord.gg/JnmXxQbHDn](https://discord.gg/JnmXxQbHDn) · **Kup mi kafe:** [czechforever.cz/#kafe](https://czechforever.cz/#kafe)
 
@@ -13,14 +15,15 @@ vlastním hlasem, vypravěč přečte knihy nahlas a česky mluví i NPC v chatu
   všechny čtyři části dabingu se stáhnou s ním a aplikace je i aktualizuje.
 - **Ručně:** z webu **[czechforever.cz](https://czechforever.cz/#stahnout)**, nebo tady v
   **[Releases](https://github.com/MarrowB83/CzechForever/releases/latest)**:
-  - `CzechForever.zip` – hlavní addon (questy, rozhovory, knihy, rozhraní, přehrávač dabingu). Povinný.
-  - `CzechForever_Dabing1.zip` – dabing 1/4: questy úrovní 1–38 a úvodní videa ras.
-  - `CzechForever_Dabing2.zip` – dabing 2/4: questy úrovní 39–60.
-  - `CzechForever_Dabing3.zip` – dabing 3/4: rozhovory a hlášky NPC, průběhy questů úrovní 1–38, chybové hlášky a
-    hlasové emoty postavy.
-  - `CzechForever_Dabing4.zip` – dabing 4/4: knihy, dopisy a cedule nahlas a řeč NPC v chatu.
+  - `CzechForever.zip` – hlavní addon (questy, rozhovory, knihy, rozhraní, přehrávač dabingu). Povinný, má jen pár MB.
+  - `CzechForever_Dabing1.zip` – dabing 1/4: questy úrovní 1–30 a úvodní videa ras.
+  - `CzechForever_Dabing2.zip` – dabing 2/4: questy úrovní 31–55, knihy, dopisy a cedule nahlas a popisy lokací.
+  - `CzechForever_Dabing3.zip` – dabing 3/4: questy úrovní 56–60, řeč NPC v chatu a repliky s českými názvy předmětů.
+  - `CzechForever_Dabing4.zip` – dabing 4/4: rozhovory a hlášky NPC, chybové hlášky a hlasové emoty postavy.
 
-  Části dabingu jsou volitelné, bez nich hraješ s českými texty a anglickými hlasy.
+  Každý quest je celý v jedné části (nabídka, průběh i odevzdání). Části dabingu jsou volitelné, bez nich hraješ
+  s českými texty a anglickými hlasy. Od verze 0.7.0 jsou části rozdělené jinak než dřív: při aktualizaci nahraď
+  všechny čtyři, jinak část replik mlčí (addon ti po přihlášení řekne, která část je stará).
 
 ## Instalace
 
