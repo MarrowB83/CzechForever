@@ -6,6 +6,9 @@ vlastním hlasem, vypravěč přečte knihy nahlas a česky mluví i NPC v chatu
 
 ### ➜ Stáhni na CurseForge: [curseforge.com/wow/addons/czechforever](https://www.curseforge.com/wow/addons/czechforever)
 
+> **Stahování je od 13. 11. 2026 jen na CurseForge.** Vydání tady na GitHubu už nevycházejí a starší jsme stáhli,
+> všechny verze najdeš na [CurseForge](https://www.curseforge.com/wow/addons/czechforever/files).
+
 **Web:** [czechforever.cz](https://czechforever.cz) · **CurseForge:** [Czech Forever](https://www.curseforge.com/wow/addons/czechforever) ·
 **Discord:** [discord.gg/JnmXxQbHDn](https://discord.gg/JnmXxQbHDn) · **Kup mi kafe:** [czechforever.cz/#kafe](https://czechforever.cz/#kafe)
 
@@ -13,13 +16,12 @@ vlastním hlasem, vypravěč přečte knihy nahlas a česky mluví i NPC v chatu
 
 - **Aplikace CurseForge (nejjednodušší):** nainstaluj [Czech Forever](https://www.curseforge.com/wow/addons/czechforever),
   všechny čtyři části dabingu se stáhnou s ním a aplikace je i aktualizuje.
-- **Ručně:** z webu **[czechforever.cz](https://czechforever.cz/#stahnout)**, nebo tady v
-  **[Releases](https://github.com/MarrowB83/CzechForever/releases/latest)**:
-  - `CzechForever.zip` – hlavní addon (questy, rozhovory, knihy, rozhraní, přehrávač dabingu). Povinný, má jen pár MB.
-  - `CzechForever_Dabing1.zip` – dabing 1/4: questy úrovní 1–30 a úvodní videa ras.
-  - `CzechForever_Dabing2.zip` – dabing 2/4: questy úrovní 31–55, knihy, dopisy a cedule nahlas a popisy lokací.
-  - `CzechForever_Dabing3.zip` – dabing 3/4: questy úrovní 56–60, řeč NPC v chatu a repliky s českými názvy předmětů.
-  - `CzechForever_Dabing4.zip` – dabing 4/4: rozhovory a hlášky NPC, chybové hlášky a hlasové emoty postavy.
+- **Ručně (bez aplikace):** na stránkách CurseForge, záložka Files. Každá část má vlastní stránku:
+  - [Czech Forever](https://www.curseforge.com/wow/addons/czechforever/files) – hlavní addon (questy, rozhovory, knihy, rozhraní, přehrávač dabingu). Povinný.
+  - [dabing 1/4](https://www.curseforge.com/wow/addons/czech-forever-dabing-1-3/files) – questy úrovní 1–30 a úvodní videa ras.
+  - [dabing 2/4](https://www.curseforge.com/wow/addons/czech-forever-dabing-2-3/files) – questy úrovní 31–55, knihy, dopisy a cedule nahlas a popisy lokací.
+  - [dabing 3/4](https://www.curseforge.com/wow/addons/czech-forever-dabing-3-3/files) – questy úrovní 56–60, řeč NPC v chatu a repliky s českými názvy předmětů.
+  - [dabing 4/4](https://www.curseforge.com/wow/addons/czech-forever-dabing-4-4/files) – rozhovory a hlášky NPC, chybové hlášky a hlasové emoty postavy.
 
   Každý quest je celý v jedné části (nabídka, průběh i odevzdání). Části dabingu jsou volitelné, bez nich hraješ
   s českými texty a anglickými hlasy. Od verze 0.7.0 jsou části rozdělené jinak než dřív: při aktualizaci nahraď
